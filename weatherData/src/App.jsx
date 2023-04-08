@@ -24,7 +24,6 @@ function App() {
         console.log(transformed);
       })
     }
-
   return (
     <div className="App">
       {isLoading?'data is loading':<table>
@@ -33,13 +32,9 @@ function App() {
          <td>{cart.id}</td>
          <td>{cart.products[0].title}</td>
          <td>{cart.total}</td>
-       </tr>
-          
-        ))}
-           
+       </tr>     
+        ))}   
       </table>}
-      
-        
         <button onClick={fetchMoviesHandler}>fetch data</button>
     </div>
   )
